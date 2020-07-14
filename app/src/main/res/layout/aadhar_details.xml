@@ -1,0 +1,64 @@
+<LinearLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <ScrollView android:layout_margin="10dp"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        >
+
+    <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_margin="20dp"
+      android:orientation="vertical">
+   <TextView
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:background="@drawable/liner_button"
+       android:text="Upload Aadhar-Card Details"
+       android:textSize="20dp"
+       android:layout_margin="10dp"
+       android:gravity="center"
+       android:textStyle="bold"
+       android:padding="10dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:text="1.Front"
+        android:layout_margin="10dp"
+        android:textStyle="bold"
+        android:textColor="@color/colorPrimaryDark"
+        android:background="@drawable/image_liner"
+        android:padding="10dp"/>
+      <ImageView
+          android:layout_width="250dp"
+          android:layout_height="250dp"
+          android:layout_gravity="center"
+          android:background="@drawable/liner_button"/>
+      <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:textSize="20dp"
+          android:text="2.Back"
+          android:layout_margin="10dp"
+          android:textStyle="bold"
+          android:textColor="@color/colorPrimaryDark"
+          android:background="@drawable/image_liner"
+          android:padding="10dp"/>
+      <ImageView
+          android:layout_width="250dp"
+          android:layout_height="250dp"
+          android:layout_gravity="center"
+          android:background="@drawable/liner_button"/>
+
+      <Button
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_margin="20dp"
+          android:textColor="@color/colorSecondarywhite"
+          android:background="@drawable/liner_button"/>
+  </LinearLayout>
+    </ScrollView>
+</LinearLayout>

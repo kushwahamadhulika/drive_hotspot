@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"/>
+         <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Driver License Photo"
+            android:layout_gravity="center"
+            android:layout_margin="20dp"
+            android:background="@drawable/button"
+            android:textAllCaps="false"
+            android:textColor="@color/colorSecondarywhite"
+            android:padding="10dp"
+            android:drawableRight="@drawable/camera_icon"
+            android:drawablePadding="10dp"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Save Image"
+            android:layout_gravity="center"
+            android:layout_margin="20dp"
+            android:background="@drawable/button"
+            android:textColor="@color/colorSecondarywhite"
+            android:textAllCaps="false"
+            android:padding="10dp"
+            />
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
