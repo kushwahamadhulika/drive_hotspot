@@ -9,6 +9,7 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.aadhar_details);
+        setContentView(R.layout.navigation_bar);
+
     }
 }
