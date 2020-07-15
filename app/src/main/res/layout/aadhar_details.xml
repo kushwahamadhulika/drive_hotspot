@@ -1,64 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
 <LinearLayout android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:layout_height="wrap_content"
     android:orientation="vertical"
     xmlns:android="http://schemas.android.com/apk/res/android">
-    <ScrollView android:layout_margin="10dp"
-        android:layout_width="fill_parent"
+    <ScrollView
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         >
-
     <LinearLayout
-      android:layout_width="match_parent"
-      android:layout_height="wrap_content"
-      android:layout_margin="20dp"
-      android:orientation="vertical">
-   <TextView
-       android:layout_width="match_parent"
-       android:layout_height="wrap_content"
-       android:background="@drawable/liner_button"
-       android:text="Upload Aadhar-Card Details"
-       android:textSize="20dp"
-       android:layout_margin="10dp"
-       android:gravity="center"
-       android:textStyle="bold"
-       android:padding="10dp"/>
-    <TextView
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:textSize="20dp"
-        android:text="1.Front"
         android:layout_margin="10dp"
-        android:textStyle="bold"
-        android:textColor="@color/colorPrimaryDark"
-        android:background="@drawable/image_liner"
-        android:padding="10dp"/>
-      <ImageView
-          android:layout_width="250dp"
-          android:layout_height="250dp"
-          android:layout_gravity="center"
-          android:background="@drawable/liner_button"/>
-      <TextView
-          android:layout_width="wrap_content"
-          android:layout_height="wrap_content"
-          android:textSize="20dp"
-          android:text="2.Back"
-          android:layout_margin="10dp"
-          android:textStyle="bold"
-          android:textColor="@color/colorPrimaryDark"
-          android:background="@drawable/image_liner"
-          android:padding="10dp"/>
-      <ImageView
-          android:layout_width="250dp"
-          android:layout_height="250dp"
-          android:layout_gravity="center"
-          android:background="@drawable/liner_button"/>
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="30dp"
+            android:padding="10dp"
+            android:text="Upload Aadhar-Card Details"
+            android:layout_gravity="center"
+            android:background="@drawable/liner_button"
+            android:textColor="@color/colorPrimaryDark"
+            android:gravity="center"
+            android:textSize="20dp"
+            android:textStyle="bold"/>
 
-      <Button
-          android:layout_width="match_parent"
-          android:layout_height="wrap_content"
-          android:layout_margin="20dp"
-          android:textColor="@color/colorSecondarywhite"
-          android:background="@drawable/liner_button"/>
-  </LinearLayout>
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            app:cardCornerRadius="10dp"
+            android:layout_margin="10dp"
+            app:cardMaxElevation="5dp"
+            xmlns:android="http://schemas.android.com/apk/res/android">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_margin="20dp"
+                >
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="250dp"
+                    android:layout_margin="20dp"
+                    android:layout_gravity="center"/>
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            app:cardCornerRadius="10dp"
+            android:layout_margin="10dp"
+            app:cardMaxElevation="5dp"
+            xmlns:android="http://schemas.android.com/apk/res/android">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_margin="20dp"
+                >
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="250dp"
+                    android:layout_margin="20dp"
+                    android:layout_gravity="center"/>
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Save Image"
+            android:layout_gravity="center"
+            android:layout_margin="20dp"
+            android:background="@drawable/button"
+            android:textColor="@color/colorSecondarywhite"
+            android:textAllCaps="false"
+            android:padding="10dp"
+            />
+
+    </LinearLayout>
     </ScrollView>
 </LinearLayout>

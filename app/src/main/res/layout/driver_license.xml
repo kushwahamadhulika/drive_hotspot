@@ -1,7 +1,35 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout
-    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
-    android:layout_height="match_parent">
+<LinearLayout android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="30dp"
+            android:padding="10dp"
+            android:text="Upload Driving License"
+            android:layout_gravity="center"
+            android:background="@drawable/liner_button"
+            android:textColor="@color/colorPrimaryDark"
+            android:gravity="center"
+            android:textSize="20dp"
+            android:textStyle="bold"/>
+
+        <com.google.android.material.card.MaterialCardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        app:cardCornerRadius="10dp"
+        android:layout_margin="10dp"
+        app:cardMaxElevation="5dp"
+        xmlns:android="http://schemas.android.com/apk/res/android">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -9,34 +37,54 @@
         android:orientation="vertical"
         >
         <ImageView
-            android:layout_width="250dp"
+            android:layout_width="match_parent"
             android:layout_height="250dp"
-            android:layout_margin="20dp"
-            android:background="@drawable/image_liner"
-            android:layout_gravity="center"/>
-         <Button
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Driver License Photo"
             android:layout_gravity="center"
-            android:layout_margin="20dp"
-            android:background="@drawable/button"
-            android:textAllCaps="false"
-            android:textColor="@color/colorSecondarywhite"
-            android:padding="10dp"
-            android:drawableRight="@drawable/camera_icon"
-            android:drawablePadding="10dp"/>
-        <Button
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Save Image"
-            android:layout_gravity="center"
-            android:layout_margin="20dp"
-            android:background="@drawable/button"
-            android:textColor="@color/colorSecondarywhite"
-            android:textAllCaps="false"
-            android:padding="10dp"
             />
-
     </LinearLayout>
-</androidx.constraintlayout.widget.ConstraintLayout>
+    </com.google.android.material.card.MaterialCardView>
+           <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="18dp"
+            android:text="Select Vehicle Type"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:layout_margin="10dp"/>
+               <Spinner
+                   android:id="@+id/spinner"
+                   android:layout_width="149dp"
+                   android:layout_height="40dp"
+                   android:layout_margin="8dp"
+                   android:layout_gravity="center"
+                   android:background="@drawable/liner_button"
+                   app:layout_constraintBottom_toBottomOf="parent"
+                   app:layout_constraintEnd_toEndOf="parent"
+                   app:layout_constraintHorizontal_bias="0.502"
+                   app:layout_constraintStart_toStartOf="parent"
+                   app:layout_constraintTop_toTopOf="parent"
+                   app:layout_constraintVertical_bias="0.498" />
+
+               <Button
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="Continue"
+                   android:layout_gravity="center"
+                   android:layout_margin="20dp"
+                   android:background="@drawable/button"
+                   android:textColor="@color/colorSecondarywhite"
+                   android:textAllCaps="false"
+                   android:padding="10dp"
+                   />
+
+           </LinearLayout>
+
+</LinearLayout>
+</LinearLayout>
