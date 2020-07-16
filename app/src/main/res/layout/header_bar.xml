@@ -2,7 +2,7 @@
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
-    android:background="@color/colorPrimaryDark"
+    android:background="@drawable/header_backgound"
     xmlns:android="http://schemas.android.com/apk/res/android">
     <!---<de.hdodenhof.circleimageview.CircleImageView
         xmlns:app="http://schemas.android.com/apk/res-auto"
@@ -12,25 +12,61 @@
         android:src="@drawable/profile"
         app:civ_border_width="2dp"
         app:civ_border_color="#FF000000"/>-->
-
-<de.hdodenhof.circleimageview.CircleImageView
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:drawableRight="@drawable/ic_baseline_settings_24"
+        android:padding="10dp"/>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:weightSum="2"
+    android:orientation="horizontal"
+    android:layout_margin="20dp">
+    <de.hdodenhof.circleimageview.CircleImageView
     android:layout_width="96dp"
     android:layout_height="96dp"
     app:civ_border_width="2dp"
-    android:layout_margin="20dp"
+    android:layout_weight="1"
+    android:layout_margin="10dp"
+    android:src="@drawable/profile_icon"
     app:civ_border_color="@color/colorSecondarywhite"/>
 
 
-    <TextView
-android:layout_width="wrap_content"
-android:layout_height="wrap_content"
-android:text="Traveling"
-android:textSize="24sp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="24sp"
+            android:padding="10dp"
+            android:layout_gravity="center"
+            android:text="Madhulika"
+            />
 
-<TextView
-android:layout_width="wrap_content"
-android:layout_height="wrap_content"
-android:text="www.taimoorsikander.com"
-android:textSize="14sp"
- />
+    </LinearLayout>
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:weightSum="2"
+    >
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Wallet Balance :"
+        android:layout_weight="1"
+        android:textStyle="bold"
+        android:textSize="18dp"
+        android:textColor="@color/colorSecondarywhite"
+        android:layout_gravity="left"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="0000 :"
+        android:textSize="18dp"
+        android:layout_weight="1"
+        android:textColor="@color/colorSecondarywhite"/>
+
+</LinearLayout>
 </LinearLayout>
