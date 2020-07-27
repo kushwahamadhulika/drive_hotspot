@@ -3,6 +3,7 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:padding="10dp"
+    android:background="@color/colorAccent"
     android:id="@+id/navBar"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="horizontal">
@@ -12,7 +13,6 @@
         android:layout_height="wrap_content"
         android:id="@+id/nav_Profile"
         android:gravity="center"
-        android:elevation="16dp"
         android:layout_weight="1"
         android:orientation="vertical">
 
@@ -20,17 +20,18 @@
         <ImageView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:src="@drawable/image_liner"
+            android:src="@drawable/profile_icon"
             />
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Profile"/>
+            android:textColor="@color/colorSecondarywhite"
+            android:text="Profile"
+            android:textStyle="bold"/>
     </LinearLayout>
     <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/nav_Home"
         android:gravity="center"
         android:layout_weight="1"
         android:orientation="vertical">
@@ -44,26 +45,52 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Home"/>
+            android:text="Home"
+            android:textStyle="bold"
+            android:textColor="@color/colorSecondarywhite"/>
     </LinearLayout>
     <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/nav_Withdraw"
+        android:id="@+id/nav_Home"
         android:gravity="center"
         android:layout_weight="1"
         android:orientation="vertical">
 
 
-       <!-- <ImageView
+        <ImageView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            //android:src="@drawable/ic_baseline_account_balance_wallet_24"
-            />-->
+            android:src="@drawable/my_wallet_icon"
+            />
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Withdraw"/>
+            android:text="Wallet"
+            android:textStyle="bold"
+            android:textColor="@color/colorSecondarywhite"/>
     </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="vertical">
+
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/logout_icons" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="LogOut"
+            android:textStyle="bold"
+            android:textColor="@color/colorSecondarywhite"/>
+    </LinearLayout>
+
 
 </LinearLayout>

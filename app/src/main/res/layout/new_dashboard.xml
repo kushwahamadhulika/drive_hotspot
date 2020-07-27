@@ -1,43 +1,55 @@
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
+<LinearLayout android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
     xmlns:android="http://schemas.android.com/apk/res/android">
+
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
         android:orientation="vertical"
-        android:weightSum="3">
-<androidx.constraintlayout.widget.ConstraintLayout
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:layout_weight="2"
-    >
+        >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:text="Welcome To"
+            android:textStyle="bold"
+            android:textColor="@color/colorAccent"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Hotspot Partner"
+            android:textStyle="bold"
+            android:textSize="23sp"
+            android:textColor="@color/colorPrimaryDark"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_margin="10dp"
+            android:weightSum="3">
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="180dp"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                app:cardCornerRadius="40sp"
+                android:layout_weight="1"
+                app:cardMaxElevation="16dp"
+                xmlns:android="http://schemas.android.com/apk/res/android">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_margin="5dp"
 
+                >
 
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Welcome To"
-        android:textSize="18dp"
-        android:textStyle="bold"
-        android:layout_margin="5dp"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:layout_editor_absoluteX="10dp" />
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Welcome To"
-        android:textSize="18dp"
-        android:textStyle="bold"
-        android:layout_margin="5dp"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:layout_editor_absoluteX="10dp" />
-
-
-</androidx.constraintlayout.widget.ConstraintLayout>
-
+            </LinearLayout>
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+    </LinearLayout>
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -59,26 +71,27 @@
                 android:layout_weight="1"
                 app:cardMaxElevation="10dp"
                 xmlns:android="http://schemas.android.com/apk/res/android">
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="vertical"
-                android:layout_margin="5dp"
-
-                >
-                <ImageView
-                    android:layout_width="40dp"
-                    android:layout_height="40dp"
-
-                    android:layout_gravity="center"
-                    android:src="@drawable/ic_manage_vehicles"/>
-                <TextView
-                    android:layout_width="wrap_content"
+                <LinearLayout
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Manage Vehicles"
-                    android:gravity="center"
-                    />
-            </LinearLayout>
+                    android:orientation="vertical"
+                    android:layout_margin="5dp"
+
+                    >
+                    <ImageView
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+
+                        android:layout_gravity="center"
+                        android:src="@drawable/shop_icon"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Manage \nshop"
+                        android:gravity="center"
+                        android:layout_gravity="center"
+                        />
+                </LinearLayout>
             </androidx.cardview.widget.CardView>
 
             <androidx.cardview.widget.CardView
@@ -101,11 +114,11 @@
                         android:layout_width="40dp"
                         android:layout_height="40dp"
                         android:layout_gravity="center"
-                        android:src="@drawable/ic_your_trips"/>
+                        android:src="@drawable/cart_icon"/>
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="  My \nTrips"
+                        android:text="My \nOrder"
                         android:layout_gravity="center"
                         />
                 </LinearLayout>
@@ -131,11 +144,12 @@
                         android:layout_height="40dp"
 
                         android:layout_gravity="center"
-                        android:src="@drawable/ic_bank_details"/>
+                        android:src="@drawable/add_products"/>
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Bank \nDetails"
+                        android:text="Manage \nProducts"
+                        android:gravity="center"
                         android:layout_gravity="center"
                         />
                 </LinearLayout>
@@ -168,7 +182,7 @@
                         android:layout_height="40dp"
 
                         android:layout_gravity="center"
-                        android:src="@drawable/ic_manage_document"/>
+                        android:src="@drawable/manage_documents_icons"/>
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
@@ -203,8 +217,9 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Emergency Contact"
+                        android:text=" Contact \nUs"
                         android:gravity="center"
+                        android:layout_gravity="center"
                         />
                 </LinearLayout>
             </androidx.cardview.widget.CardView>
@@ -224,18 +239,18 @@
                     >
 
                     <ImageView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
 
                         android:layout_gravity="center"
-                        android:src="@drawable/ic_feedback" />
+                        android:src="@drawable/feedback_icons" />
 
                     <TextView
                         android:layout_width="wrap_content"
-                        android:layout_height="55dp"
+                        android:layout_height="wrap_content"
                         android:layout_gravity="center"
                         android:gravity="center"
-                        android:text="Feedback Rating" />
+                        android:text="Feedback \nRating" />
                 </LinearLayout>
             </androidx.cardview.widget.CardView>
 
@@ -253,40 +268,32 @@
                 android:layout_weight="1"
                 app:cardMaxElevation="20dp"
                 xmlns:android="http://schemas.android.com/apk/res/android">
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="vertical"
-                android:layout_margin="5dp"
-
-                >
-                <TextView
+                <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Update Your Profile"
-                    android:gravity="center"
-                    android:textStyle="bold"
-                    android:textSize="18dp"/>
+                    android:orientation="vertical"
+                    android:layout_margin="5dp"
 
-            </LinearLayout>
+                    >
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Update Your Profile"
+                        android:gravity="center"
+                        android:textStyle="bold"
+                        android:textSize="18dp"/>
+
+                </LinearLayout>
             </androidx.cardview.widget.CardView>
-            </LinearLayout>
-         <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal">
-                     </LinearLayout>
+        </LinearLayout>
+
 
     </LinearLayout>
-
-</LinearLayout>
-
     <include
         layout="@layout/bottom_nav_bar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+
         app:layout_constraintBottom_toBottomOf="parent" />
 
-
-
-</androidx.constraintlayout.widget.ConstraintLayout>
+</LinearLayout>
